@@ -1,0 +1,6 @@
+.nav:hover > ul {
+    display: block;
+}
+.sub-nav{
+    display: none;
+}
