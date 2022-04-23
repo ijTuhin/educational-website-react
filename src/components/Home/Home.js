@@ -5,8 +5,8 @@ import img3 from '../../images/img3.jpeg';
 import './Home.css';
 const Home = () => {
     return (
-        <div>
-            <div id="default-carousel" class="relative" data-carousel="static">
+        <div className='flex justify-around items-center'>
+            <div id="default-carousel" class="relative banner" data-carousel="static">
 
                 <div class="carousel overflow-hidden relative h-96 sm:h-96 xl:h-96 2xl:h-96">
                     <div class="carousel-img duration-700 ease-in-out" data-carousel-item>
@@ -39,6 +39,10 @@ const Home = () => {
                         <span class="hidden">Next</span>
                     </span>
                 </button>
+            </div>
+            <div className='mx-8'>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorum culpa id magni earum necessitatibus modi, provident alias inventore nesciunt, quod ut tempora molestias perferendis sit nam impedit ea voluptate vero totam odit ipsa. Tempore assumenda autem est voluptate temporibus, dolor quasi. Earum, sequi delectus aliquid rem recusandae, pariatur eius porro, odit itaque tempore labore eum distinctio? Quis, culpa quidem! Ratione magni voluptates, accusamus molestias dicta sunt soluta aspernatur aliquam sapiente ex quae exercitationem ab pariatur optio maxime nisi incidunt earum nam, quidem accusantium praesentium sint minima? Iure consequatur, architecto eius eaque maxime sint earum alias, eos odit adipisci minus!</p>
+                <button className='border border-l-8 px-2 py-1'>About us</button>
             </div>
         </div>
     );
