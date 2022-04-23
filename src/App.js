@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div>
+    <div className='relative'>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
