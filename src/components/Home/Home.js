@@ -42,7 +42,7 @@ const Home = () => {
             </div>
             <div className='mx-8'>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorum culpa id magni earum necessitatibus modi, provident alias inventore nesciunt, quod ut tempora molestias perferendis sit nam impedit ea voluptate vero totam odit ipsa. Tempore assumenda autem est voluptate temporibus, dolor quasi. Earum, sequi delectus aliquid rem recusandae, pariatur eius porro, odit itaque tempore labore eum distinctio? Quis, culpa quidem! Ratione magni voluptates, accusamus molestias dicta sunt soluta aspernatur aliquam sapiente ex quae exercitationem ab pariatur optio maxime nisi incidunt earum nam, quidem accusantium praesentium sint minima? Iure consequatur, architecto eius eaque maxime sint earum alias, eos odit adipisci minus!</p>
-                <button className='border border-l-8 px-2 py-1'>About us</button>
+                <button className='border-slate-500 hover:border-slate-400 border-l-8 border-r-0 px-2 py-1 bg-gradient-to-r from-slate-500 to-slate-300 hover:from-slate-400 hover:to-slate-200 rounded mt-2'>About us</button>
             </div>
         </div>
     );
