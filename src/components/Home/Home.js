@@ -5,10 +5,10 @@ import img3 from '../../images/img3.jpeg';
 import './Home.css';
 const Home = () => {
     return (
-        <div className='flex justify-around items-center'>
-            <div id="default-carousel" class="relative banner" data-carousel="static">
+        <div className='flex flex-col md:flex-row justify-around items-center'>
+            <div id="default-carousel" class="relative banner md:pt-36" data-carousel="static">
 
-                <div class="carousel overflow-hidden relative h-96 sm:h-96 xl:h-96 2xl:h-96">
+                <div class="md:max-w-2xl w-screen overflow-hidden relative h-96 sm:h-96 xl:h-96 2xl:h-96">
                     <div class="carousel-img duration-700 ease-in-out" data-carousel-item>
                         <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
                         <img src={img1} class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="..." />
@@ -40,8 +40,8 @@ const Home = () => {
                     </span>
                 </button>
             </div>
-            <div className='mx-8'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorum culpa id magni earum necessitatibus modi, provident alias inventore nesciunt, quod ut tempora molestias perferendis sit nam impedit ea voluptate vero totam odit ipsa. Tempore assumenda autem est voluptate temporibus, dolor quasi. Earum, sequi delectus aliquid rem recusandae, pariatur eius porro, odit itaque tempore labore eum distinctio? Quis, culpa quidem! Ratione magni voluptates, accusamus molestias dicta sunt soluta aspernatur aliquam sapiente ex quae exercitationem ab pariatur optio maxime nisi incidunt earum nam, quidem accusantium praesentium sint minima? Iure consequatur, architecto eius eaque maxime sint earum alias, eos odit adipisci minus!</p>
+            <div className='mx-8  md:pt-32'>
+                <p className='text-center md:text-left'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorum culpa id magni earum necessitatibus modi, provident alias inventore nesciunt, quod ut tempora molestias perferendis sit nam impedit ea voluptate vero totam odit ipsa. Tempore assumenda autem est voluptate temporibus, dolor quasi. Earum, sequi delectus aliquid rem recusandae, pariatur eius porro, odit itaque tempore labore eum distinctio? Quis, culpa quidem! Ratione magni voluptates, accusamus molestias dicta sunt soluta aspernatur aliquam sapiente ex quae exercitationem ab pariatur optio maxime nisi incidunt earum nam, quidem accusantium praesentium sint minima? Iure consequatur, architecto eius eaque maxime sint earum alias, eos odit adipisci minus!</p>
                 <button className='border-amber-700 hover:border-yellow-600 border-l-8 border-r-0 px-2 py-2 bg-gradient-to-r hover:from-yellow-600 hover:to-yellow-400 hover:text-slate-300 rounded mt-2'>About us</button>
             </div>
         </div>

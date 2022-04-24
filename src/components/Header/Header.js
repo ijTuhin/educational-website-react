@@ -13,7 +13,7 @@ const Header = () => {
                 <nav className=' md:block hidden'>
                     <span className='nav'>
                         <Link className='mx-2 px-1 py-2 text-slate-900 hover:text-green-600' to='/'>Home</Link>
-                        <ul className='sub-nav mt-4 absolute top-12 right-80 px-3 mt-2'>
+                        <ul className='sub-nav mt-4 absolute top-12 right-80 px-3'>
                             <li className='text-slate-600 hover:text-green-600 decoration-4 hover:no-underline'>Section-1</li>
                             <li className='text-slate-600 hover:text-green-600 decoration-4 hover:no-underline'>Section-2</li>
                             <li className='text-slate-600 hover:text-green-600 decoration-4 hover:no-underline'>Section-3</li>
