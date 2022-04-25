@@ -3,8 +3,9 @@
 }
 .sub-nav{
     display: none;
-    background-color: rgba(222, 184, 135,0.1);
 }
 .header{
     background-color: burlywood;
+    position: sticky;
+    top: 0px;
 }

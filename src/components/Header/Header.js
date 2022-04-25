@@ -7,7 +7,7 @@ import './Header.css';
 import '../../index.css';
 const Header = () => {
     return (
-        <div className='header w-screen absolute z-40'>
+        <div className='header w-full absolute z-40 py-1'>
             <div className='my-4 text-lg flex justify-between items-center mx-4'>
                 <img src={logo} className="w-14" alt="" />
                 <nav className=' md:block hidden'>
@@ -29,7 +29,7 @@ const Header = () => {
                 <nav className='block md:hidden'>
                     <span className='nav relative'>
                         <FontAwesomeIcon className='text-3xl' icon={faBars}></FontAwesomeIcon>
-                        <ul className='sub-nav absolute top-6 right-0 border bg-slate-400 p-2 text-right'>
+                        <ul className='sub-nav absolute top-6 right-0 border bg-white p-2 text-right'>
                             <li><Link className='hover:bg-slate-200  font-thin text-sm' to='/'>Home</Link></li>
                             <li><Link className='hover:bg-slate-200  font-thin text-sm' to='/academics'>Academics</Link></li>
                             <li><Link className='hover:bg-slate-200  font-thin text-sm' to='/courses'>Courses</Link></li>
