@@ -49,30 +49,30 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col justify-center items-center my-16 mx-10 '>
-                <div className='bg-white shadow-lg md:shadow-none md:bg-transparent w-72 flex md:flex-row flex-col md:justify-around justify-start md:items-center items-start'>
-                    <div className='px-2 md:my-2 pt-8 md:py-4 md:pt-2 flex flex-row justify-center items-start'>
+            <section className='flex flex-col justify-center items-center md:my-16'>
+                <div className='md:shadow-lg md:flex md:flex-row md:justify-around md:items-center py-4 bg-transparent grid grid-cols-2 gap-4'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
                         <span className='md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='px-2 md:my-2 pt-8 md:py-4 md:pt-2 flex flex-row justify-center items-start'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='px-2 md:my-2 pt-8 md:py-4 md:pt-2 flex flex-row justify-center items-start'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='px-2 md:my-2 pt-8 md:py-4 pb-8 md:pt-2 flex flex-row justify-center items-start'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
