@@ -4,93 +4,93 @@ import { facebook, google, linkedin, youtube } from './../../index';
 import './Footer.css';
 const Footer = () => {
     return (
-        <div className='flex flex-col justify-between bg-slate-900 w-full py-8'>
+        <div className='text-white flex flex-col justify-between bg-slate-900 w-full pt-8'>
             <div className='w-20 mx-auto'>
                 <img src={logo} alt="" />
             </div>
-            <div className='text-white text-burlywood flex flex-row justify-evenly items-center'>
+            <div className='text-burlywood flex flex-row justify-evenly items-center'>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                        <li>Section-1</li>
+                        <li>Section-2</li>
+                        <li>Section-3</li>
+                        <li>Section-4</li>
+                        <li>Section-5</li>
+                        <li>Section-6</li>
+                        <li>Section-7</li>
+                        <li>Section-8</li>
+                        <li>Section-9</li>
                     </ul>
                 </div>
             </div>
@@ -99,6 +99,14 @@ const Footer = () => {
                 <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={google} alt="" />
                 <img className='w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={linkedin} alt="" />
                 <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={youtube} alt="" />
+            </div>
+            <div className='flex flex-col justify-center items-center py-4'>
+                <div>
+                    <button className='border rounded-sm text-sm px-2 mx-1 bg-burlywood hover:border-0'>Like</button>
+                    <button className='border rounded-sm text-sm px-2 mx-1 bg-burlywood hover:border-0'>Share</button>
+                </div>
+                <h4 className='py-4 text-lg font-semibold'>International Islamic University Chittagong | Kumira, Chattogram-4318 | +8802334461900-7</h4>
+                <h4 className='pb-4 text-xs'>Copyright © 2022 All rights reserved IIUC and <span>Developed by</span> </h4>
             </div>
         </div>
     );

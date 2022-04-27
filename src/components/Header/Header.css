@@ -12,8 +12,9 @@
     top: 0px;
 }
 
-.bg-burlywood {
-    background-color: burlywood;
+.bg-burlywood:hover {
+    background-color: rgb(230, 174, 102);
+    color: black;
 }
 
 .text-burlywood > div > ul > li:hover {
