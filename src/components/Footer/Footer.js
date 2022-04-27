@@ -95,10 +95,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex justify-center pt-8'>
-                <img className='w-6 mx-2 hover:rounded-full' src={facebook} alt="" />
-                <img className='w-6 mx-2 bg-white p-1 hover:rounded-full' src={google} alt="" />
-                <img className='w-6 mx-2 hover:rounded-full' src={linkedin} alt="" />
-                <img className='w-6 mx-2 bg-white p-1 hover:rounded-full' src={youtube} alt="" />
+                <img className='w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={facebook} alt="" />
+                <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={google} alt="" />
+                <img className='w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={linkedin} alt="" />
+                <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={youtube} alt="" />
             </div>
         </div>
     );
