@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/iiuc-logo.png';
 import { facebook, google, linkedin, youtube } from './../../index';
-import './Footer.css';
 const Footer = () => {
     return (
         <div className='text-white flex flex-col justify-between bg-slate-900 w-full pt-8'>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className='flex flex-col'>
                     <h3 className='text-xl font-bold py-1'>Feature Link</h3>
                     <ul>
-                        <li>Section-1</li>
+                        <li><Link to='./student-panel'>Student Web Panel</Link></li>
                         <li>Section-2</li>
                         <li>Section-3</li>
                         <li>Section-4</li>
