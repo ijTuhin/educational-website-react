@@ -49,40 +49,36 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col justify-center items-center md:my-16'>
-                <div className='md:shadow-lg md:flex md:flex-row md:justify-around md:items-center py-4 bg-transparent grid grid-cols-2 gap-4'>
-                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
+            <section className='flex flex-col justify-center items-center md:my-10'>
+                <div className='md:shadow-lg md:flex md:flex-row md:justify-around md:items-center py-4 md:px-10 bg-transparent grid grid-cols-2 gap-4'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row  transition ease-in-out delay-150 hover:-translate-x-2 duration-300'>
                         <span className='md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row  transition ease-in-out delay-150 hover:-translate-x-2 duration-300'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row  transition ease-in-out delay-150 hover:-translate-x-2 duration-300'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row'>
+                    <div className='flex flex-col items-center justify-center md:my-2 md:py-4 md:pt-2 md:flex-row  transition ease-in-out delay-150 hover:-translate-x-2 duration-300'>
                         <span className='md:border-slate-300 md:border-l-2 md:text-5xl text-3xl icon px-3'><FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon></span>
                         <div>
                             <p className='md:text-xl text-lg text-gray-700 font-semibold'>Graduation</p>
                             <p className='text-slate-500 text-xs md:text-sm'>Getting degree</p>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
                 </div>
             </section>
         </div>
