@@ -16,6 +16,6 @@
     background-color: burlywood;
 }
 
-.text-burlywood:hover {
+.text-burlywood > div > ul > li:hover {
     color: burlywood;
 }
