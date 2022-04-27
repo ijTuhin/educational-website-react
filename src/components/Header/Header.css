@@ -17,6 +17,9 @@
     color: black;
 }
 
+.text-burlywood > div > ul > li {
+    font-weight: 100;
+}
 .text-burlywood > div > ul > li:hover {
     color: burlywood;
 }

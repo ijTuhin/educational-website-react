@@ -5,12 +5,12 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div className='text-white flex flex-col justify-between bg-slate-900 w-full pt-8'>
-            <div className='w-20 mx-auto'>
+            <div className='w-20 mx-auto pb-2'>
                 <img src={logo} alt="" />
             </div>
             <div className='text-burlywood flex flex-row justify-evenly items-center'>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>IIUC</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>Feature Link</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>Admission</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
@@ -52,7 +52,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>Resources</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
@@ -66,7 +66,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>Campus Life</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
@@ -80,7 +80,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                    <h3>IIUC</h3>
+                    <h3 className='text-xl font-bold py-1'>Important Links</h3>
                     <ul>
                         <li>Section-1</li>
                         <li>Section-2</li>
