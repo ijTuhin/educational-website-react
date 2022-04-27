@@ -1,11 +1,21 @@
-.nav:hover > ul {
+.nav:hover>ul {
     display: block;
 }
-.sub-nav{
+
+.sub-nav {
     display: none;
 }
-.header{
+
+.header {
     background-color: burlywood;
     position: sticky;
     top: 0px;
+}
+
+.bg-burlywood {
+    background-color: burlywood;
+}
+
+.text-burlywood:hover {
+    color: burlywood;
 }

@@ -11,85 +11,85 @@ const Footer = () => {
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
                 <div className='flex flex-col'>
                     <h3>IIUC</h3>
                     <ul>
-                            <li>Section-1</li>
-                            <li>Section-2</li>
-                            <li>Section-3</li>
-                            <li>Section-4</li>
-                            <li>Section-5</li>
-                            <li>Section-6</li>
-                            <li>Section-7</li>
-                            <li>Section-8</li>
-                            <li>Section-9</li>
+                            <li className='text-burlywood'>Section-1</li>
+                            <li className='text-burlywood'>Section-2</li>
+                            <li className='text-burlywood'>Section-3</li>
+                            <li className='text-burlywood'>Section-4</li>
+                            <li className='text-burlywood'>Section-5</li>
+                            <li className='text-burlywood'>Section-6</li>
+                            <li className='text-burlywood'>Section-7</li>
+                            <li className='text-burlywood'>Section-8</li>
+                            <li className='text-burlywood'>Section-9</li>
                     </ul>
                 </div>
             </div>
