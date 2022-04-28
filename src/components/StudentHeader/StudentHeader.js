@@ -1,9 +1,35 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFeed, faUser, faUserAltSlash } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { iiucLogo } from '../../index';
+import '../../index.css';
 
 const StudentHeader = () => {
     return (
-        <div className='w-screen py-6 bg-slate-800 text-white'>
-            <h2>Header</h2>
+        <div className='bg-indigo-900 text-white flex justify-between items-center w-full absolute z-40 py-1'>
+            <div className='my-4 text-lg flex justify-start items-center mx-4'>
+                <img src={iiucLogo} className="w-14" alt="" />
+                <nav className=' md:block hidden'>
+                    <span className='nav'>
+                        <Link className='mx-2 px-1 py-2 hover:text-green-600' to='/'><FontAwesomeIcon className='mb-0.5' icon={faUser}></FontAwesomeIcon> Student</Link>
+                        <ul className='sub-nav bg-white mt-4 absolute top-12 right-80 ml-48 px-3'>
+                            <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-1</li>
+                            <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-2</li>
+                            <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-3</li>
+                            <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-4</li>
+                            <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-5</li>
+                        </ul>
+                    </span>
+                    <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'><FontAwesomeIcon className='mb-0.5' icon={faFeed}></FontAwesomeIcon> TER</Link>
+                    <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/courses'>Application</Link>
+                    <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/campus'>IQAC</Link>
+                    <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/search'>Others</Link>
+                </nav>
+            </div>
+            <div className='my-4 text-lg font-semibold mx-5'>
+                <h3><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3>
+            </div>
         </div>
     );
 };
