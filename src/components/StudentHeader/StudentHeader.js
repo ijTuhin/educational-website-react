@@ -2,7 +2,7 @@ import React from 'react';
 
 const StudentHeader = () => {
     return (
-        <div className='w-screen bg-slate-800 text-white'>
+        <div className='w-screen py-6 bg-slate-800 text-white'>
             <h2>Header</h2>
         </div>
     );

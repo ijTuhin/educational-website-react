@@ -24,3 +24,7 @@ export const google1 = require('./icons/google1.png');
 export const google2 = require('./icons/google2.png');
 export const youtube = require('./icons/youtube.png');
 export const linkedin = require('./icons/linkedin.png');
+export const iiucLogo = require('./images/iiuc-logo.png');
+export const img1 = require('./images/img1.jpeg');
+export const img2 = require('./images/img2.jpeg');
+export const img3 = require('./images/img3.jpeg');

@@ -2,14 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../images/iiuc-logo.png';
+import {iiucLogo} from '../../index';
 import './Header.css';
 import '../../index.css';
 const Header = () => {
     return (
         <div className='header w-full absolute z-40 py-1'>
             <div className='my-4 text-lg flex justify-between items-center mx-4'>
-                <img src={logo} className="w-14" alt="" />
+                <img src={iiucLogo} className="w-14" alt="" />
                 <nav className=' md:block hidden'>
                     <span className='nav'>
                         <Link className='mx-2 px-1 py-2 text-slate-900 hover:text-green-600' to='/'>Home</Link>

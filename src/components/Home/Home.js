@@ -1,9 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import img1 from '../../images/img1.jpeg';
-import img2 from '../../images/img2.jpeg';
-import img3 from '../../images/img3.jpeg';
+import {img1, img2, img3} from '../../index';
 import './Home.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
