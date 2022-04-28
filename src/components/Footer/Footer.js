@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/iiuc-logo.png';
-import { facebook, google, linkedin, youtube } from './../../index';
+import { facebook, google1, linkedin, youtube } from './../../index';
 const Footer = () => {
     return (
         <div className='text-white flex flex-col justify-between bg-slate-900 w-full pt-8'>
@@ -95,10 +95,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex justify-center pt-8'>
-                <img className='w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={facebook} alt="" />
-                <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={google} alt="" />
-                <img className='w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={linkedin} alt="" />
-                <img className='bg-white p-1 w-6 mx-2 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={youtube} alt="" />
+                <img className='w-6 mx-1 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={facebook} alt="" />
+                <img className='bg-white p-1 w-6 mx-1 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={google1} alt="" />
+                <img className='w-6 mx-1 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={linkedin} alt="" />
+                <img className='bg-white p-1 w-6 mx-1 transition ease-in-out delay-50 duration-300 hover:translate-y-2 hover:rounded-full' src={youtube} alt="" />
             </div>
             <div className='flex flex-col justify-center items-center py-4'>
                 <div>

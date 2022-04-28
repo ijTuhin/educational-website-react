@@ -20,6 +20,7 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 export const facebook = require('./icons/facebook.png');
-export const google = require('./icons/google.png');
+export const google1 = require('./icons/google1.png');
+export const google2 = require('./icons/google2.png');
 export const youtube = require('./icons/youtube.png');
 export const linkedin = require('./icons/linkedin.png');
