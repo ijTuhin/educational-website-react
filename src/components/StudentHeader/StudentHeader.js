@@ -13,7 +13,7 @@ const StudentHeader = () => {
                 <nav className=' md:block hidden'>
                     <span className='nav'>
                         <Link className='mx-2 px-1 py-2 hover:text-green-600' to='/'><FontAwesomeIcon className='mb-0.5' icon={faUser}></FontAwesomeIcon> Student</Link>
-                        <ul className='sub-nav bg-white mt-4 absolute top-12 right-80 ml-48 px-3'>
+                        <ul className='sub-nav bg-white mt-4 absolute top-12 left-20 px-3'>
                             <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-1</li>
                             <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-2</li>
                             <li className='text-slate-800 hover:text-green-600 decoration-4 hover:no-underline'>Section-3</li>
@@ -39,7 +39,7 @@ const StudentHeader = () => {
                             <li><Link className='text-slate-800  font-thin text-sm' to='/academics'>Application</Link></li>
                             <li><Link className='text-slate-800  font-thin text-sm' to='/courses'>Courses</Link></li>
                             <li><Link className='text-slate-800  font-thin text-sm' to='/campus'>IQAC</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm text-slate-500' to='/search'>Others</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/search'>Others</Link></li>
                         </ul>
                     </span>
                 </nav>
