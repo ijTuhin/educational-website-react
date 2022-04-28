@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFeed, faUser, faUserAltSlash } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faFeed, faUser, faUserAltSlash } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { iiucLogo } from '../../index';
@@ -28,7 +28,21 @@ const StudentHeader = () => {
                 </nav>
             </div>
             <div className='my-4 text-lg font-semibold mx-5'>
-                <h3><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3>
+                <h3 className='md:block hidden'><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3>
+                <nav className='block md:hidden'>
+                    <span className='nav relative'>
+                        <FontAwesomeIcon className='text-3xl' icon={faBars}></FontAwesomeIcon>
+                        <ul className='sub-nav absolute top-6 right-0 border bg-white p-2 text-start'>
+                            <li><h3 className='text-slate-800  font-thin text-sm'><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/'><FontAwesomeIcon className='mb-0.5' icon={faUser}></FontAwesomeIcon> Student</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/academics'><FontAwesomeIcon className='mb-0.5' icon={faFeed}></FontAwesomeIcon> TER</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/academics'>Application</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/courses'>Courses</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm' to='/campus'>IQAC</Link></li>
+                            <li><Link className='text-slate-800  font-thin text-sm text-slate-500' to='/search'>Others</Link></li>
+                        </ul>
+                    </span>
+                </nav>
             </div>
         </div>
     );
