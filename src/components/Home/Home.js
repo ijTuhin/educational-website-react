@@ -5,9 +5,12 @@ import img1 from '../../images/img1.jpeg';
 import img2 from '../../images/img2.jpeg';
 import img3 from '../../images/img3.jpeg';
 import './Home.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 const Home = () => {
     return (
         <div>
+            <Header></Header>
             <section className='flex flex-col md:flex-row justify-around items-center'>
                 <div id="default-carousel" class="relative banner md:pt-20 pt-0 md:pb-20 md:ml-8" data-carousel="static">
 
@@ -81,6 +84,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Footer></Footer>
         </div>
     );
 };

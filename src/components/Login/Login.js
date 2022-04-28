@@ -36,7 +36,7 @@ const Login = () => {
 
                             <div className="flex flex-row items-center">
                                 <p className="text-lg mb-0 mr-4">Sign in with</p>
-                                <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1">
+                                <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-red-200 focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1">
                                     <img className='w-10' src={google2} alt="" />
                                 </button>
 
