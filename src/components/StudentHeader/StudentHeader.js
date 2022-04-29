@@ -7,7 +7,7 @@ import '../../index.css';
 
 const StudentHeader = () => {
     return (
-        <div className='bg-indigo-900 text-white flex justify-between items-center w-full absolute z-40 py-1'>
+        <div className='sticky top-0 bg-indigo-900 text-white flex justify-between items-center w-full py-1'>
             <div className='my-4 text-lg flex justify-start items-center mx-4'>
                 <img src={iiucLogo} className="w-14" alt="" />
                 <nav className=' md:block hidden'>
