@@ -7,7 +7,7 @@ import './Header.css';
 import '../../index.css';
 const Header = () => {
     return (
-        <div className='header w-full absolute z-40 py-1'>
+        <div className='header w-full py-1'>
             <div className='my-4 text-lg flex justify-between items-center mx-4'>
                 <img src={iiucLogo} className="w-14" alt="" />
                 <nav className=' md:block hidden'>
