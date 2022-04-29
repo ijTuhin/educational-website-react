@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='w-20 mx-auto pb-2'>
                 <img src={logo} alt="" />
             </div>
-            <div className='text-burlywood flex flex-row justify-evenly items-center'>
+            <div className='text-burlywood grid grid-cols-2 mx-auto md:mx-0 md:flex md:justify-evenly md:items-center'>
                 <div className='flex flex-col'>
                     <h3 className='text-xl font-bold py-1'>IIUC</h3>
                     <ul>
@@ -105,8 +105,8 @@ const Footer = () => {
                     <button className='border rounded-sm text-sm px-2 mx-1 bg-burlywood hover:border-0'>Like</button>
                     <button className='border rounded-sm text-sm px-2 mx-1 bg-burlywood hover:border-0'>Share</button>
                 </div>
-                <h4 className='py-4 text-lg font-semibold'>International Islamic University Chittagong | Kumira, Chattogram-4318 | +8802334461900-7</h4>
-                <h4 className='pb-4 text-xs'>Copyright © 2022 All rights reserved IIUC and <span>Developed by</span> </h4>
+                <h4 className='py-4 text-lg text-center font-semibold'>International Islamic University Chittagong | Kumira, Chattogram-4318 | +8802334461900-7</h4>
+                <h4 className='pb-4 text-xs  text-center'>Copyright © 2022 All rights reserved IIUC and <span>Developed by</span> </h4>
             </div>
         </div>
     );
