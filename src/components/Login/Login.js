@@ -8,36 +8,36 @@ const Login = () => {
                 <div className="px-6 h-full text-gray-800">
 
                     <div className="flex flex-col justify-center items-center h-screen -mt-20">
-                        <div className="flex justify-between items-center">
-                        <img className='w-8' src={iiucLogo} alt="" />
-                            <h2 className='text-3xl font-semibold mx-auto mb-2 text-blue-700'>Student Login</h2>
-                        </div>
                         <form>
-                            <div className="mb-3">
-                                <input type="text" className="form-control block w-96 px-6 py-1.5 text-base text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" />
+                            <div className="flex justify-start items-center">
+                                <img className='w-9 mb-2.5' src={iiucLogo} alt="" />
+                                <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student Login</h2>
                             </div>
                             <div className="mb-3">
-                                <input type="password" className="form-control block w-96 px-6 py-1.5 text-base text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password" />
+                                <input type="text" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" />
+                            </div>
+                            <div className="mb-3">
+                                <input type="password" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password" />
                             </div>
 
                             <div className="flex justify-between items-center mb-6">
                                 <div className="form-group form-check">
                                     <input type="checkbox" className="form-check-input appearance-none h-4 w-4 border border-gray-400 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" id="exampleCheck2" />
-                                    <label className="form-check-label inline-block text-gray-800" for="exampleCheck2">Remember me</label>
+                                    <label className="form-check-label inline-block text-gray-800 text-sm md:text-base" for="exampleCheck2">Remember me</label>
                                 </div>
-                                <a href="#!" className="text-gray-800">Forgot password?</a>
+                                <a href="#!" className="text-gray-800 text-sm md:text-base">Forgot password?</a>
                             </div>
 
                             <div className="text-center lg:text-left">
-                                <button type="button" className="inline-block px-7 py-1.5 w-96 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Login</button>
+                                <button type="button" className="inline-block px-7 py-1.5 w-72 md:w-96 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Login</button>
                             </div>
 
                             <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-400 before:mt-0.5 after:flex-1 after:border-t after:border-gray-400 after:mt-0.5">
-                                <p className="text-center font-semibold mx-4 mb-0">Or</p>
+                                <p className="text-center text-sm md:text-base font-semibold mx-4 mb-0">Or</p>
                             </div>
 
                             <div className="flex flex-row items-center">
-                                <p className="text-lg mb-0 mr-4">Sign in with</p>
+                                <p className="md:text-lg text-base mb-0 mr-4">Sign in with</p>
                                 <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-red-200 focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1">
                                     <img className='w-10' src={google2} alt="" />
                                 </button>
