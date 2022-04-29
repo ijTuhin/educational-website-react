@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { google2, iiucLogo } from './../../index';
 
 const Login = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+
+    const handleNameInputBlur = event => {
+        setName(event.target.value);
+    }
+    const handleEmailInputBlur = event => {
+        setEmail(event.target.value);
+    }
+    const handleFormOnSubmit = event => {
+        console.log(name, email);
+        event.preventDefault();
+    }
+
     return (
         <div className='bg-white'>
             <section>
                 <div className="px-6 h-full text-gray-800">
 
                     <div className="flex flex-col justify-center items-center h-screen -mt-20">
-                        <form>
+                        <form onSubmit={handleFormOnSubmit}>
                             <div className="flex justify-start items-center">
                                 <img className='w-9 mb-2.5' src={iiucLogo} alt="" />
                                 <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student Login</h2>
                             </div>
                             <div className="mb-3">
-                                <input type="text" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Email address" />
+                                <input onBlur={ handleNameInputBlur} type="text" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='email' placeholder="Email address" />
                             </div>
                             <div className="mb-3">
-                                <input type="password" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" placeholder="Password" />
+                                <input onBlur={handleEmailInputBlur} type="password" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='password' placeholder="Password" />
                             </div>
 
                             <div className="flex justify-between items-center mb-6">
@@ -29,7 +43,7 @@ const Login = () => {
                             </div>
 
                             <div className="text-center lg:text-left">
-                                <button type="button" className="inline-block px-7 py-1.5 w-72 md:w-96 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Login</button>
+                                <button type="submit" className="inline-block px-7 py-1.5 w-72 md:w-96 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Login</button>
                             </div>
 
                             <div className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-400 before:mt-0.5 after:flex-1 after:border-t after:border-gray-400 after:mt-0.5">
