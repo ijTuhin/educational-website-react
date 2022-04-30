@@ -1,19 +1,35 @@
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
+import auth from '../../Firebase.init';
 import { google2, iiucLogo } from './../../index';
 
 const Login = () => {
-    const [name, setName] = useState('');
+    const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+    const [loginError, setLoginError] = useState(false);
+    const [error, setError] = useState('');
 
-    const handleNameInputBlur = event => {
-        setName(event.target.value);
+
+    const handlePasswordInputBlur = event => {
+        setPassword(event.target.value);
     }
     const handleEmailInputBlur = event => {
         setEmail(event.target.value);
     }
     const handleFormOnSubmit = event => {
-        console.log(name, email);
+        console.log(password, email);
         event.preventDefault();
+
+        signInWithEmailAndPassword(auth, email, password)
+        .then( result => {
+            const user = result.user;
+            console.log(user);
+            alert('Successful Login');
+        })
+        .catch(error => {
+            console.error(error);
+            setError(error.message);
+        });
     }
 
     return (
@@ -25,13 +41,13 @@ const Login = () => {
                         <form onSubmit={handleFormOnSubmit}>
                             <div className="flex justify-start items-center">
                                 <img className='w-9 mb-2.5' src={iiucLogo} alt="" />
-                                <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student Login</h2>
+                                <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student </h2>
                             </div>
                             <div className="mb-3">
-                                <input onBlur={ handleNameInputBlur} type="text" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='email' placeholder="Email address" />
+                                <input onBlur={handleEmailInputBlur} type="text" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='email' placeholder="Email address" />
                             </div>
                             <div className="mb-3">
-                                <input onBlur={handleEmailInputBlur} type="password" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='password' placeholder="Password" />
+                                <input onBlur={handlePasswordInputBlur} type="password" className="form-control block w-72 md:w-96 px-6 py-1.5 md:text-base text-sm text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput2" name='password' placeholder="Password" />
                             </div>
 
                             <div className="flex justify-between items-center mb-6">
