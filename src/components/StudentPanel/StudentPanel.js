@@ -59,9 +59,15 @@ const StudentPanel = () => {
                                         Achieving minimum GPA 2.00 in each Semester.
                                     </div>
                                 </div>
-                                <div>
-                                    <nav></nav>
-                                    <h3></h3>
+                                <div className='border border-slate-100 shadow-md'>
+                                    <nav className='flex justify-start text-blue-500 text-xs font-bold mt-4'>
+                                        <Link className='py-2.5 rounded px-2 hover:text-slate-400 border border-b-2 hover:border-b-0' to='/academics'>Overview</Link>
+                                        <Link className='py-2.5 rounded px-2 hover:text-slate-400 border border-b-2 hover:border-b-0' to='/academics'>Contact</Link>
+                                        <Link className='py-2.5 rounded px-2 hover:text-slate-400 border border-b-2 hover:border-b-0' to='/academics'>Academic</Link>
+                                        <Link className='py-2.5 rounded px-2 hover:text-slate-400 border border-b-2 hover:border-b-0' to='/academics'>Advisor</Link>
+                                        <Link className='py-2.5 rounded px-2 hover:text-slate-400 border border-b-2 hover:border-b-0' to='/academics'>Syllabus</Link>
+                                    </nav>
+                                    <h3 className='text-2xl font-serif'>Overview</h3>
                                     <div></div>
                                 </div>
                             </div>
