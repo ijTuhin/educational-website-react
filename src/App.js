@@ -11,9 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/student-panel' element={
-          <RequireAuth>
-            <StudentPanel></StudentPanel>
-          </RequireAuth>
+          <StudentPanel></StudentPanel>
         }></Route>
         <Route path='/student-login' element={<Login></Login>}></Route>
       </Routes>
