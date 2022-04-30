@@ -8,8 +8,8 @@ const StudentPanel = () => {
     return (
         <div>
             <StudentHeader></StudentHeader>
-            <div className='mb-48 grid grid-cols-5'>
-                <div className="bg-slate-200 border mx-5 mt-5 flex justify-center">
+            <div className='grid grid-cols-5'>
+                <div className="bg-slate-200 border mx-5 my-5 flex justify-center">
                     <div className='flex flex-col p-5 w-screen'>
                         <img className='w-48 py-5' src={user} alt="" />
                         <div className='text-start text-xs pt-2'>
@@ -51,7 +51,14 @@ const StudentPanel = () => {
                                     <h3>ID Number: C183275</h3>
                                     <h3>Registration No: 0061820005101275</h3>
                                 </div>
-                                <div></div>
+                                <div className='mx-1.5 text-center font-semibold font-serif'>
+                                    <div class="bg-blue-200 rounded py-3 px-6 my-4 text-base text-blue-700 mb-3" role="alert">
+                                        If GPA less than 2 in consecutive 3 semester, then your admission will cancel.
+                                    </div>
+                                    <div class="bg-purple-200 rounded py-3 px-6 my-4 text-base text-purple-700 mb-3" role="alert">
+                                        Achieving minimum GPA 2.00 in each Semester.
+                                    </div>
+                                </div>
                                 <div>
                                     <nav></nav>
                                     <h3></h3>
