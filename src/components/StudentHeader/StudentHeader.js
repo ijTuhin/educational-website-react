@@ -4,14 +4,17 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { iiucLogo } from '../../index';
 import '../../index.css';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase.init';
 import { signOut } from 'firebase/auth';
 const StudentHeader = () => {
-    const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
-    
+    const handleLogOut = () => {
+        signOut(auth)
+        .then(() => {
+            navigate('/student-login');
+        })
+    }
     return (
         <div className='sticky top-0 bg-indigo-900 text-white flex justify-between items-center w-full z-40 py-1'>
             <div className='my-4 text-lg flex justify-start items-center mx-4'>
@@ -31,7 +34,7 @@ const StudentHeader = () => {
                     <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/courses'>Application</Link>
                     <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/campus'>IQAC</Link>
                     <Link className='mx-2 px-1 hover:text-green-600 hover:underline-offset-8 decoration-4 hover:underline' to='/search'>Others</Link>
-                    <button className='mx-2 px-1 transition duration-150 ease-in-out' to='/academics' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log Out"><FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon></button>
+                    <button onClick={handleLogOut} className='mx-2 px-1 transition duration-150 ease-in-out' to='/academics' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log Out"><FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon></button>
                 </nav>
             </div>
             <div className='my-4 text-lg font-semibold mx-5'>
