@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase.init';
@@ -14,6 +14,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [loginError, setLoginError] = useState(false);
     const [error, setError] = useState('');
+    const [reset, setReset] = useState(false);
 
     const handlePasswordInputBlur = event => {
         setPassword(event.target.value);
@@ -34,6 +35,14 @@ const Login = () => {
                 setError(error.message);
                 setLoginError(true);
             });
+    }
+
+    // Forget password
+    const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(
+                setReset(true)
+            )
     }
 
     // Sign In with Google auth
@@ -76,6 +85,16 @@ const Login = () => {
                                 </>
                             }
 
+                            {reset &&
+                                <>
+                                    <div class="bg-blue-100 rounded py-2.5 px-6 mb-5 text-sm text-blue-700 inline-flex items-center w-full" role="alert">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" class="w-4 h-4 mr-2 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path>
+                                        </svg>
+                                        A password reset email has been sent.. 
+                                    </div>
+                                </>
+                            }
 
 
                             <div className="mb-3">
@@ -86,11 +105,11 @@ const Login = () => {
                             </div>
 
                             <div className="flex justify-between items-center mb-6">
-                                <div className="form-group form-check">
+                                {/* <div className="form-group form-check">
                                     <input type="checkbox" className="form-check-input appearance-none h-4 w-4 border border-gray-400 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" id="exampleCheck2" />
                                     <label className="form-check-label inline-block text-gray-800 text-sm md:text-base" for="exampleCheck2">Remember me</label>
-                                </div>
-                                <a href="#!" className="text-gray-800 text-sm md:text-base">Forgot password?</a>
+                                </div> */}
+                                <button onClick={handleResetPassword} className="text-gray-800 text-sm md:text-base hover:text-blue-800">Forgot password?</button>
                             </div>
 
                             <div className="text-center lg:text-left">
