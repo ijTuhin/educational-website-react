@@ -29,7 +29,7 @@ const StudentPanel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white border col-span-4 pr-5 py-5">
+                <div className="bg-white border col-span-4 pr-0.5 py-5">
                     <nav className='flex justify-between text-slate-400 text-base font-semibold'>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Course Registration</Link>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Add/Drop</Link>
@@ -43,7 +43,7 @@ const StudentPanel = () => {
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Profile</Link>
                     </nav>
                     <hr className='mx-3.5 my-1.5' />
-                    <div className='grid grid-cols-4 px-4'>
+                    <div className='grid grid-cols-4 px-4 gap-x-2'>
                         <div className='col-span-3'>
                             <h1 className='text-3xl font-serif py-2'>Israt Jahan Tuhin</h1>
                             <div className='border-t-2 border-slate-300'>
@@ -66,7 +66,24 @@ const StudentPanel = () => {
                                 </div>
                             </div>
                         </div>
-                        <div></div>
+                        <div>
+                            <div className='text-center text-lg text-green-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-green-200'>
+                                <h2 className='text-xl'>Current CGPA</h2>
+                                <h1 className='font-sans'>CGPA: 3.394</h1>
+                            </div>
+                            <div className='text-center text-lg text-purple-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-purple-200'>
+                                <h2 className='text-xl'>Required Credit Hours</h2>
+                                <h1 className='font-sans'>163</h1>
+                            </div>
+                            <div className='text-center text-lg text-red-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-red-200'>
+                                <h2 className='text-xl'>Minimum Degree Requirement</h2>
+                                <h1 className='font-sans'>CGPA: 2.50</h1>
+                            </div>
+                            <div className='text-center text-lg text-orange-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-orange-200'>
+                                <h2 className='text-xl'>Outstanding Balance</h2>
+                                <h1 className='font-sans'>0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
