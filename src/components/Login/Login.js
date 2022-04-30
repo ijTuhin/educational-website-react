@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import React, { useState } from 'react';
 import auth from '../../Firebase.init';
 import { google2, iiucLogo } from './../../index';
@@ -8,7 +8,6 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [loginError, setLoginError] = useState(false);
     const [error, setError] = useState('');
-
 
     const handlePasswordInputBlur = event => {
         setPassword(event.target.value);
@@ -25,6 +24,21 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
                 alert('Successful Login');
+            })
+            .catch(error => {
+                console.error(error);
+                setError(error.message);
+                setLoginError(true);
+            });
+    }
+
+    // Sign In with Google
+    const googleProvider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                alert('Successful Login with Google');
             })
             .catch(error => {
                 console.error(error);
@@ -85,7 +99,7 @@ const Login = () => {
 
                             <div className="flex flex-row items-center">
                                 <p className="md:text-lg text-base mb-0 mr-4">Sign in with</p>
-                                <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-red-200 focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1">
+                                <button onClick={handleGoogleSignIn} type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="inline-block bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-red-200 focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1">
                                     <img className='w-10' src={google2} alt="" />
                                 </button>
 
