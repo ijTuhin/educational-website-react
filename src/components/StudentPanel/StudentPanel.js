@@ -65,7 +65,7 @@ const StudentPanel = () => {
                             <div className='border-t-2 border-slate-300'>
                                 <div className='flex justify-between text-sm font-semibold text-blue-700 mb-8 md:mb-0'>
                                     <h3>ID Number: C183275</h3>
-                                    <h3 className='text-right'>Registration No: 0061820005101275</h3>
+                                    <h3 className='text-right'>Registration No: 0061830005203275</h3>
                                 </div>
                                 <div className='mx-1.5 text-center font-semibold font-serif mb-8 md:mb-0'>
                                     <div class="bg-blue-200 rounded py-3 px-6 my-4 text-sm text-blue-700 mb-3" role="alert">

@@ -42,14 +42,14 @@ const StudentHeader = () => {
                 <nav className='block md:hidden'>
                     <span className='nav relative'>
                         <FontAwesomeIcon className='text-3xl' icon={faBars}></FontAwesomeIcon>
-                        <ul className='sub-nav absolute top-6 right-0 border bg-white/70 p-3 text-start'>
-                            <li><h3 className='text-slate-800  font-thin text-sm'><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/'><FontAwesomeIcon className='mb-0.5' icon={faUser}></FontAwesomeIcon> Student</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/academics'><FontAwesomeIcon className='mb-0.5' icon={faFeed}></FontAwesomeIcon> TER</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/academics'>Application</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/courses'>Courses</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/campus'>IQAC</Link></li>
-                            <li><Link className='text-slate-800  font-thin text-sm' to='/search'>Others</Link></li>
+                        <ul className='sub-nav absolute top-6 right-0 border bg-white p-3 text-start'>
+                            <li><h3 className='text-slate-800 text-sm'><FontAwesomeIcon className='mb-0.5' icon={faUserAltSlash}></FontAwesomeIcon> User</h3></li>
+                            <li><Link className='text-slate-800 text-sm' to='/'><FontAwesomeIcon className='mb-0.5' icon={faUser}></FontAwesomeIcon> Student</Link></li>
+                            <li><Link className='text-slate-800 text-sm' to='/academics'><FontAwesomeIcon className='mb-0.5' icon={faFeed}></FontAwesomeIcon> TER</Link></li>
+                            <li><Link className='text-slate-800 text-sm' to='/academics'>Application</Link></li>
+                            <li><Link className='text-slate-800 text-sm' to='/courses'>Courses</Link></li>
+                            <li><Link className='text-slate-800 text-sm' to='/campus'>IQAC</Link></li>
+                            <li><Link className='text-slate-800 text-sm' to='/search'>Others</Link></li>
                         </ul>
                     </span>
                 </nav>
