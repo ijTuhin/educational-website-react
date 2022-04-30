@@ -68,10 +68,10 @@ const StudentPanel = () => {
                                     <h3 className='text-right'>Registration No: 0061830005203275</h3>
                                 </div>
                                 <div className='mx-1.5 text-center font-semibold font-serif mb-8 md:mb-0'>
-                                    <div class="bg-blue-200 rounded py-3 px-6 my-4 text-sm text-blue-700 mb-3" role="alert">
+                                    <div class="bg-blue-100 md:bg-blue-200 rounded py-3 px-6 my-4 text-sm text-blue-700 mb-3" role="alert">
                                         If GPA less than 2 in consecutive 3 semester, then your admission will cancel.
                                     </div>
-                                    <div class="bg-purple-200 rounded py-3 px-6 my-4 text-sm text-purple-700 mb-3" role="alert">
+                                    <div class="bg-purple-100 md:bg-purple-200 rounded py-3 px-6 my-4 text-sm text-purple-700 mb-3" role="alert">
                                         Achieving minimum GPA 2.00 in each Semester.
                                     </div>
                                 </div>
@@ -89,19 +89,19 @@ const StudentPanel = () => {
                             </div>
                         </div>
                         <div className='mx-3.5 mb-1 md:mb-0 md:mx-0'>
-                            <div className='text-center text-lg text-green-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-green-200'>
+                            <div className='text-center text-lg text-green-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-green-100 md:bg-green-200'>
                                 <h2 className='text-xl'>Current CGPA</h2>
                                 <h1 className='font-sans'>CGPA: 3.394</h1>
                             </div>
-                            <div className='text-center text-lg text-purple-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-purple-200'>
+                            <div className='text-center text-lg text-purple-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-purple-100 md:bg-purple-200'>
                                 <h2 className='text-xl'>Required Credit Hours</h2>
                                 <h1 className='font-sans'>163</h1>
                             </div>
-                            <div className='text-center text-lg text-red-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-red-200'>
+                            <div className='text-center text-lg text-red-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-red-100 md:bg-red-200'>
                                 <h2 className='text-xl'>Minimum Degree Requirement</h2>
                                 <h1 className='font-sans'>CGPA: 2.50</h1>
                             </div>
-                            <div className='text-center text-lg text-orange-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-orange-200'>
+                            <div className='text-center text-lg text-orange-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-orange-100 md:bg-orange-200'>
                                 <h2 className='text-xl'>Outstanding Balance</h2>
                                 <h1 className='font-sans'>0</h1>
                             </div>
