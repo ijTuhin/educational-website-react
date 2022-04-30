@@ -42,7 +42,7 @@ const Login = () => {
                         <form onSubmit={handleFormOnSubmit}>
                             <div className="flex justify-start items-center">
                                 <img className='w-9 mb-2.5' src={iiucLogo} alt="" />
-                                <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student </h2>
+                                <h2 className='text-3xl md:text-4xl text-blue-900 font-semibold mb-5 ml-2'>Student Login</h2>
                             </div>
 
 
