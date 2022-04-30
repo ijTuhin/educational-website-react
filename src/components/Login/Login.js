@@ -1,9 +1,15 @@
 import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase.init';
 import { google2, iiucLogo } from './../../index';
 
 const Login = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location?.state?.from?.pathname || '/';
+
+    // Sign in with email-pass
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [loginError, setLoginError] = useState(false);
@@ -21,9 +27,7 @@ const Login = () => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user = result.user;
-                console.log(user);
-                alert('Successful Login');
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.error(error);
@@ -32,13 +36,13 @@ const Login = () => {
             });
     }
 
-    // Sign In with Google
+    // Sign In with Google auth
     const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                alert('Successful Login with Google');
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.error(error);
