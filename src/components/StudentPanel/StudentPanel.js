@@ -30,7 +30,7 @@ const StudentPanel = () => {
                     </div>
                 </div>
                 <div className="bg-white border col-span-4 pr-5 py-5">
-                    <nav className='flex justify-between'>
+                    <nav className='flex justify-between text-slate-400 text-base font-semibold'>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Course Registration</Link>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Add/Drop</Link>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Withdraw</Link>
@@ -43,6 +43,24 @@ const StudentPanel = () => {
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Profile</Link>
                     </nav>
                     <hr className='mx-3.5 my-1.5' />
+                    <div className='grid grid-cols-4 px-4'>
+                        <div className='col-span-3'>
+                            <h1 className='text-3xl font-serif py-2'>Israt Jahan Tuhin</h1>
+                            <div className='border-t-2 border-slate-300'>
+                                <div className='flex justify-between text-lg font-semibold text-blue-700'>
+                                    <h3>ID Number: C183275</h3>
+                                    <h3>Registration No: 0061820005101275</h3>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <nav></nav>
+                                    <h3></h3>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <StudentFooter></StudentFooter>
