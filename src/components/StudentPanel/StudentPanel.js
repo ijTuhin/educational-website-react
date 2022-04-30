@@ -8,8 +8,24 @@ const StudentPanel = () => {
     return (
         <div>
             <StudentHeader></StudentHeader>
-            <div className='flex flex-col-reverse md:grid md:grid-cols-5'>
-                <div className="bg-slate-200 border mx-5 my-5 flex justify-center">
+            <div className='bg-white md:bg-transparent flex flex-col md:grid md:grid-cols-5'>
+                <div className='block bg-white border pr-0.5 py-5 md:hidden'>
+                    <nav className='flex justify-center md:justify-between flex-wrap text-slate-400 text-base font-semibold'>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Course Registration</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Add/Drop</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Withdraw</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Course Status</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Registration Summary</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Result</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Payment History</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Waiver</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Password</Link>
+                        <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Profile</Link>
+                    </nav>
+                </div>
+
+
+                <div className="bg-slate-200 md:border mx-10 my-7 md:m-5 flex justify-center">
                     <div className='flex flex-col p-5 w-screen'>
                         <img className='w-48 py-5 mx-auto' src={user} alt="" />
                         <div className='text-start text-xs pt-2'>
@@ -29,8 +45,8 @@ const StudentPanel = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white border col-span-4 pr-0.5 py-5">
-                    <nav className='flex justify-center md:justify-between flex-wrap text-slate-400 text-base font-semibold'>
+                <div className="bg-white md:border col-span-4 pr-0.5 py-5">
+                    <nav className='hidden md:flex md:justify-between flex-wrap text-slate-400 text-base font-semibold'>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Course Registration</Link>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Add/Drop</Link>
                         <Link className='mx-2 py-1 px-2 hover:text-blue-900 hover:underline-offset-8 decoration-4 hover:underline' to='/academics'>Withdraw</Link>
@@ -45,17 +61,17 @@ const StudentPanel = () => {
                     <hr className='mx-3.5 my-1.5 md:block hidden' />
                     <div className='flex flex-col md:grid md:grid-cols-4 px-4 gap-x-2'>
                         <div className='col-span-3'>
-                            <h1 className='text-center text-3xl font-serif md:text-start py-2'>Israt Jahan Tuhin</h1>
+                            <h1 className='text-center text-3xl font-serif md:text-start md:py-2 py-3'>Israt Jahan Tuhin</h1>
                             <div className='border-t-2 border-slate-300'>
-                                <div className='flex justify-between text-base font-semibold text-blue-700'>
+                                <div className='flex justify-between text-sm font-semibold text-blue-700 mb-8 md:mb-0'>
                                     <h3>ID Number: C183275</h3>
                                     <h3 className='text-right'>Registration No: 0061820005101275</h3>
                                 </div>
-                                <div className='mx-1.5 text-center font-semibold font-serif'>
-                                    <div class="bg-blue-200 rounded py-3 px-6 my-4 text-base text-blue-700 mb-3" role="alert">
+                                <div className='mx-1.5 text-center font-semibold font-serif mb-8 md:mb-0'>
+                                    <div class="bg-blue-200 rounded py-3 px-6 my-4 text-sm text-blue-700 mb-3" role="alert">
                                         If GPA less than 2 in consecutive 3 semester, then your admission will cancel.
                                     </div>
-                                    <div class="bg-purple-200 rounded py-3 px-6 my-4 text-base text-purple-700 mb-3" role="alert">
+                                    <div class="bg-purple-200 rounded py-3 px-6 my-4 text-sm text-purple-700 mb-3" role="alert">
                                         Achieving minimum GPA 2.00 in each Semester.
                                     </div>
                                 </div>
@@ -72,7 +88,7 @@ const StudentPanel = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='mx-3.5 mb-1 md:mb-0 md:mx-0'>
                             <div className='text-center text-lg text-green-600 font-serif font-semibold rounded-md flex flex-col justify-evenly h-40 my-2 bg-green-200'>
                                 <h2 className='text-xl'>Current CGPA</h2>
                                 <h1 className='font-sans'>CGPA: 3.394</h1>
