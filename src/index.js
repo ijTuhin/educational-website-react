@@ -28,3 +28,4 @@ export const iiucLogo = require('./images/iiuc-logo.png');
 export const img1 = require('./images/img1.jpeg');
 export const img2 = require('./images/img2.jpeg');
 export const img3 = require('./images/img3.jpeg');
+export const user = require('./images/user-img.png');
